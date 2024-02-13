@@ -18,7 +18,10 @@
 			<div class="slides">
 				<section data-markdown>
 					<textarea data-template>
-					# Phase biasing of a Josephson junction using Rashba-Edelstein effect
+					### Phase biasing of a Josephson junction using Rashba-Edelstein effect
+
+					<!-- Add image of a Josephson junction -->
+					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 75%;">
 
 					[Ashwin Kumar Karnad](https://ashwinschronicles.github.io/)
 
@@ -30,10 +33,11 @@
 								<td style="width: 33.33%;"><img src="images/logo/Logo_MPSD.png" alt="MPSD" style="width: 55%;"></td>
 								<td style="width: 33.33%;"><img src="images/logo/Logo_NISER.png" alt="NISER" style="width: 35%;"></td>
 								<td style="width: 33.33%;"><img src="images/logo/Logo_BITS.svg" alt="BITS" style="width: 35%;"></td>
-							</tr>
+						</tr>
 					</table>
-				</textarea>
+					</textarea>
 				</section>
+
 				<section data-markdown>
 					<textarea data-template>
 					## Outline
@@ -43,8 +47,94 @@
 					- Josephson Junctions with Rashba Edelstein Effect
 					- Other work
 				</textarea>
-				  </section>
-				<section>Slide 2</section>
+				</section>
+
+
+				<section>
+					<section>
+					<h2>Introduction to Josephson Junctions</h2>
+
+					<ul>
+						<li>Josephson junctions are weak links between two superconductors.</li>
+						<li>They are used to create superconducting qubits, SQUIDs, and other devices.</li>
+					</ul>
+					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
+
+					</section>
+
+
+					<section>
+						<h3>Josephson Relations - I</h3>
+						<ul>
+							<li>Current through a Josephson junction is given by
+								$$I_s = I_c \sin(\delta)$$
+							</li>
+							<li>Here, $I_c$ is the critical current and $\delta$ is the phase difference between the superconductors ($\phi_1 - \phi_2$).</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Josephson Relations - II</h3>
+						<ul>
+							<li>Voltage across a Josephson junction is given by
+								$$V = \frac{\Phi_0}{2\pi} \frac{d\delta}{dt}$$
+							</li>
+							<li>Here, $\Phi_0$ is the magnetic flux quantum.
+								$$\Phi_0 = \frac{h}{2e} ~ 2.067\mathrm{x}10^{-15} Wb$$
+							</li>
+
+						</ul>
+					</section>
+
+<!--
+					<section>
+						<h3>Josephson Relations</h3>
+						<ul>
+							<li>Energy of the junction is given by
+								$$E = E_J \cos(\phi)$$
+							</li>
+							<li>Here, $E_J$ is the Josephson energy.</li>
+						</ul>
+					</section> -->
+					<section>
+						<h3>The RCSJ Model</h3>
+						<div style="display: flex;">
+							<div style="width: 70%;">
+								<ul>
+									<li>Resistively and capacitively shunted junction model.</li>
+									<p class="fragment">$$ \frac{\Phi_0}{2\pi}C \ddot{\delta} + \frac{\Phi_0}{2\pi R}  \dot{\delta} = I-I_c\sin{\delta}$$</p>
+									<p class="fragment">Rearranging, we get
+									$$ \ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta)) $$ </p>
+								</ul>
+							</div>
+							<div style="width: 30%;">
+								<img src="images/RCSJ.svg" alt="MPSD" style="width: 100%;">
+							</div>
+						</div>
+					</section>
+					<section data-transition="convex">
+						<h3>The RCSJ Model</h3>
+						<div style="display: flex;">
+							<div style="width: 70%;">
+								<ul>
+									Rearranging, we get
+									$$ \ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta)) $$
+									<li> dynamics of $\delta$ resembles a damped particle with </li>
+									<ul>
+										<li> Effective mass $C$ </li>
+										<li> Coefficient of friction $\frac{1}{R}$ </li>
+										<li> Potential on the particle  $-(\frac{2\pi}{C\Phi_{0}})(I\delta-I_{c}\delta\sin(\delta))$ </li>
+									</ul>
+
+								</ul>
+							</div>
+							<div style="width: 30%;">
+								<img src="images/RCSJ.svg" alt="MPSD" style="width: 100%;">
+							</div>
+						</div>
+
+					</section>
+
+				</section>
 			</div>
 		</div>
 
