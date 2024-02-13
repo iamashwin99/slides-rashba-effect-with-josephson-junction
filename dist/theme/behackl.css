@@ -31,7 +31,8 @@
 :root {
   --custom-emph: #525893;
 
-  --background-color: #ece6e2;
+  /* --background-color: #ece6e2; */
+  --background-color: #ffffff;
   /* --main-font: Source Sans Pro, Helvetica, sans-serif; */
   --main-font: Gill Sans, Helvetica, sans-serif;
   --main-font-size: 34px;
