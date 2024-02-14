@@ -19,9 +19,22 @@
 				<section data-markdown>
 					<textarea data-template>
 					### Phase biasing of a Josephson junction using Rashba-Edelstein effect
+					<!-- Add today's date -->
+					<div class="todaysdate" style="text-align: right; font-size:small;"> 16th Feb 2024</div>
+					<div class="todaysdate" style="text-align: Left; font-size:smaller;">Helmholtz Center Berlin for Materials and Energy</div>
+					<script>
+						var today = new Date();
+						var dd = String(today.getDate()).padStart(2, '0');
+						var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+						var yyyy = today.getFullYear();
+						today = mm + '/' + dd + '/' + yyyy;
+						var date_div = document.querySelector('.todaysdate');
+						date_div.innerHTML = today;
+					</script>
+
 
 					<!-- Add image of a Josephson junction -->
-					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 75%;">
+					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 70%;">
 
 					[Ashwin Kumar Karnad](https://ashwinschronicles.github.io/)
 
@@ -35,18 +48,52 @@
 								<td style="width: 33.33%;"><img src="images/logo/Logo_BITS.svg" alt="BITS" style="width: 35%;"></td>
 						</tr>
 					</table>
+
+					Note:
+					- Thank prof for inviting me to give a talk.
+					- I am talking about my masters thesis
+					- Why am i giving the talk?
+					- Currently working as a RSE at MPSD, Hamburg.
 					</textarea>
+
+
 				</section>
 
 				<section data-markdown>
 					<textarea data-template>
 					## Outline
 
-					- Introduction to Josephson Junctions
-					- Rashba Edelstein Effect
+					- Self Introduction
+					- Prior work
 					- Josephson Junctions with Rashba Edelstein Effect
-					- Other work
+					- Current work
 				</textarea>
+				</section>
+
+				<section>
+					<section>
+						<h2>Self Introduction</h2>
+						<div style="display: flex;">
+							<div style="width: 50%;font-size:large;">
+								<ul>
+									<li>MSc Physics + BE Electronics and Instrumentation from BITS, India</li>
+									<li>Cryogenic probe: NISER, Bhubaneswar</li>
+									<li>Simulation of a reticle missile and its deflection: DRDO, India</li>
+									<li>Simulation of a BMS for EV: Kaynes, India</li>
+									<li>Master's Thesis on Josephson Junctions at NISER</li>
+									<li>Research Software Engineer at MPSD, Hamburg</li>
+									<li>Electronics Hobbyist</li>
+								</ul>
+							</div>
+							<div style="width: 50%;">
+								<!-- Video from images/video/Imitato.mp4  -->
+								<video width="100%" controls>
+									<source src="images/video/Imitato.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+
+							</div>
+						</div>
+
 				</section>
 
 				<!-- Introduction to Josephson Junctions -->
@@ -61,7 +108,7 @@
 								<li>They are used to create superconducting qubits, SQUIDs, and other devices.</li>
 							</ul>
 						</div>
-						<div style="width: 50%;">
+						<div style="width: 80%;">
 							<img src="images/JJ-phase.svg" alt="Image" style="width: 100%;">
 						</div>
 					</div>
@@ -69,7 +116,7 @@
 					</section>
 
 
-					<section>
+					<section data-auto-animate>
 						<h3>Josephson Relations - I</h3>
 						<ul>
 							<li>Current through a Josephson junction is given by
@@ -79,7 +126,7 @@
 						</ul>
 						<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
 					</section>
-					<section>
+					<section data-auto-animate>
 						<h3>Josephson Relations - II</h3>
 						<ul>
 							<li>Voltage across a Josephson junction is given by
@@ -94,7 +141,7 @@
 					</section>
 
 <!--
-					<section>
+					<section data-auto-animate>
 						<h3>Josephson Relations</h3>
 						<ul>
 							<li>Energy of the junction is given by
@@ -103,7 +150,36 @@
 							<li>Here, $E_J$ is the Josephson energy.</li>
 						</ul>
 					</section> -->
-					<section>
+					<section data-auto-animate>
+						<h3>Josephson Junction in a Magnetic Field</h3>
+						<ul>
+							<li>When a magnetic field is applied, the phase difference $\delta$ changes.</li>
+							<li> In case of small junctions, the current magnetic field relation is given by
+								$$I_{c}=I_{0}\left|\frac{\sin\left(\pi\frac{\Phi_{J}}{\Phi_{0}}\right)}{\pi\frac{\Phi_{J}}{\Phi_{0}}}\right|$$
+							</li>
+							<li>Here, $\Phi_{J}=\mu_{0}HLd$ is the magnetic flux through the junction area.</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>Josephson Junction in a Magnetic Field</h3>
+						<ul>
+							<li> This is of the standard Fraunhofer pattern form.</li>
+							$$F(x)=I_{0}|\frac{\sin{\pi x}}{\pi x}|$$
+						<!-- Plot the Fraunhofer pattern as a graph using chart.js -->
+						</ul>
+						<td></td>
+					<!-- <img src="images/fraunhofer_pattern.png" alt="Fraunhofer pattern" style="width: 50%;"> -->
+					<!-- A Table with one row and one column with only the image and text  -->
+					<table style="width: 50%; font-size: 20px; text-align: center;">
+						<tr>
+							<td style="width: 100%;"><img src="images/fraunhofer_pattern.png" alt="Fraunhofer pattern" style="width: 100%;">Plot of the Fraunhofer pattern [ E. R. Caianiello et. al. Journal of Modern Physics
+								Vol.06 No.05(2015) ]</td>
+						</tr>
+					</table>
+
+					</section>
+
+					<section data-auto-animate>
 						<h3>The RCSJ Model</h3>
 						<div style="display: flex;">
 							<div style="width: 70%;">
@@ -119,7 +195,7 @@
 							</div>
 						</div>
 					</section>
-					<section data-transition="convex">
+					<section data-auto-animate>
 						<h3>The RCSJ Model</h3>
 						<div style="display: flex;">
 							<div style="width: 70%;">
@@ -163,7 +239,7 @@
 
 				<!-- Rashba Edelstein Effect -->
 				<section>
-					<section>
+					<section data-auto-animate>
 						<h2>Rashba Edelstein Effect</h2>
 						<div style="display: flex;">
 							<div style="width: 70%;">
@@ -179,11 +255,11 @@
 						<!-- Add a note that this is opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect. -->
 						<aside class="notes">
 							<p>Opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect.</p>
-						  </aside>
+						</aside>
 
 					</section>
-					<section>
-						<h3>Detection of Rashba-Edelstein Effect</h3>
+					<section data-auto-animate>
+						<h2>Detection of Rashba-Edelstein Effect</h2>
 						<ul>
 							<li>Interface effect $\implies$ Direct detection is not easy</li>
 						</ul>
@@ -193,7 +269,6 @@
 						<ul>
 							<li> The inverse Rashba-Edelstein effect</li>
 							<li> Interaction of charge current with spin density at the interface via FMR</li>
-							<li> Interaction of charge current with spin density at the interface via FMR</li>
 						</ul>
 					</section>
 				</section>
@@ -201,7 +276,7 @@
 				<!-- Phase biasing of a Josephson junction using Rashba–Edelstein effect -->
 				<section>
 					<section>
-						<h2>Phase biasing of a Josephson junction using Rashba–Edelstein effect</h2>
+						<h2>Phase biasing of a Josephson junction using Rashba-Edelstein effect</h2>
 						<div style="display: flex;">
 							<div style="width: 70%;">
 								<br>
@@ -306,9 +381,21 @@
 							</tr>
 						</table>
 				</section>
+
+				<section>
+					<h3>Rashba-Edelstein effect in JJs and SQUIDs</h3>
+					<!-- Insert the image of the SQUID and JJ with Rashba-Edelstein effect -->
+					<img src="images/Measurement plots.png" alt="JJ and SQUID with Rashba-Edelstein effect" style="width: 65%;">
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
+				</section>
 				<section>
 					<h3>Simulation to verify $I_cH$ vs $VH$</h3>
-
+					<!-- Insert the image of python logo on the top right of the slide and on top of all the text  -->
+					<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
+					<ul>
+						<li>Simulated using the RCSJ model.</li>
+						<li>Compared the $I_cH$ and $VH$ patterns (periodicity at $\frac{\Phi_J}{\Phi_0}$)</li>
+					</ul>
 					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
 					<table style="width: 100%;height: 100%; font-size: 20px;">
 						<tr>
@@ -318,38 +405,31 @@
 					</table>
 				</section>
 				<section>
-					<h3>Rashba-Edelstein effect in JJs and SQUIDs</h3>
-					<!-- Insert the image of the SQUID and JJ with Rashba-Edelstein effect -->
-					<img src="images/Measurement plots.png" alt="JJ and SQUID with Rashba-Edelstein effect" style="width: 65%;">
-					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Commun 14, 7415 (2023)</p>
-				</section>
-
-				<section>
 					<h3>Mechanism explanation in JJ</h3>
 					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
 					<table style="width: 100%;height: 100%; font-size: 20px;">
 						<tr>
-							<td style="width: 50%;"><img src="images/JJ_belowTc.png" alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ below $T_c$</td>
 							<td style="width: 50%;"><img src="images/JJ_above_Tc.png" alt="Physical effects in JJ above Tc" style="width: 100%;">Physical effects in JJ above $T_c$</td>
+							<td style="width: 50%;"><img src="images/JJ_belowTc.png" alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ below $T_c$</td>
 						</tr>
 					</table>
-					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Commun 14, 7415 (2023)</p>
-				</section>
-
-				<section>
-					<h3>Conclusion</h3>
-					<ul>
-						<li>Direct detection of Rashba-Edelstein effect is possible using Josephson Junctions.</li>
-						<li>Phase difference $\delta$ of the junction can be tuned by geometry.</li>
-					</ul>
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
 				</section>
 
 				<section>
 					<h3>Publication</h3>
 					<!-- Insert image of publication  -->
-					<img src="images/ourPaper.png" alt="Nature Communications publication" style="width: 70%;">
-					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Commun 14, 7415 (2023)</p>
+					<img src="images/ourPaper.png" alt="Nature Comications publication" style="width: 70%;">
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
 				</section>
+				<section>
+					<h3>Conclusion</h3>
+					<ul>
+						<li>Direct detection of Rashba-Edelstein effect is possible using Josephson Junctions.</li>
+						<li>Phase difference $\delta$ of the junction can be tuned by the junction geometry.</li>
+					</ul>
+				</section>
+
 
 			</section>
 			</div>
@@ -360,6 +440,7 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/math/math.js"></script>
+		<!-- reveal.js-notes-pointer Public -->
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -367,8 +448,13 @@
 			Reveal.initialize({
 				hash: true,
 				slideNumber: 'c',
+				// // mouse-pointer plugin caiofcm/plugin-revealjs-mouse-pointer
+				// dependencies: [
+				// 	{ src: 'plugin/mouse-pointer.js', async: true },
+				// ],
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX  ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+
 			});
 		</script>
 	</body>

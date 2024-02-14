@@ -24,12 +24,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.5824599"
      inkscape:cx="331.13003"
-     inkscape:cy="207.27223"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="983"
-     inkscape:window-y="2160"
-     inkscape:window-maximized="1"
+     inkscape:cy="206.95627"
+     inkscape:window-width="3840"
+     inkscape:window-height="1243"
+     inkscape:window-x="0"
+     inkscape:window-y="393"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
@@ -450,15 +450,15 @@
        stroke-width="0.264583"
        fill="#008080" />
     <path
-       d="M 189.933,15.4001 C 135.203,26.4306 30.4031,33.8202 189.62,60.4075"
+       d="M 190.76923,15.400594 C 135.4998,26.430852 29.666968,33.82029 190.45314,60.407006"
        id="path1839-3"
        stroke="#000000"
-       stroke-width="0.264583"
+       stroke-width="0.265881"
        fill="#008080" />
     <g
        id="g3199"
        fill="#ffffff"
-       transform="translate(-59.6199,-42.113)">
+       transform="matrix(1.4671111,0,0,1.5110945,-115.30025,-81.513956)">
       <g
          id="g3372">
         <g
@@ -543,9 +543,10 @@
     <g
        id="g3516"
        fill="#ffffff"
-       transform="translate(40.2666,-42.6989)">
+       transform="translate(46.087425,-40.846819)">
       <g
-         id="g2062">
+         id="g2062"
+         transform="matrix(1.4615396,0,0,1.5110945,-58.480138,-41.196304)">
         <g
            id="g9363">
           <use
