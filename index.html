@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Phase biasing of a Josephson junction using Rashba-Edelstein effect</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/behackl.css">
+	<title>Phase biasing of a Josephson junction using Rashba-Edelstein effect</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/behackl.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
 					### Phase biasing of a Josephson junction using Rashba-Edelstein effect
 					<!-- Add today's date -->
 					<div class="todaysdate" style="text-align: right; font-size:small;"> 16th Feb 2024</div>
@@ -57,216 +59,45 @@
 					</textarea>
 
 
-				</section>
-
+			</section>
+			<section>
 				<section data-markdown>
 					<textarea data-template>
 					## Outline
 
-					- Self Introduction
-					- Prior work
 					- Josephson Junctions with Rashba Edelstein Effect
-					- Current work
+					- Other prior work and Current work
 				</textarea>
 				</section>
 
-				<section>
-					<section data-auto-animate>
-						<h2>Self Introduction</h2>
+				<section data-auto-animate>
+					<h2>Self Introduction</h2>
+					<ul>
+						<li>MSc Physics + BE Electronics and Instrumentation from BITS, India</li>
 						<ul>
-							<li>MSc Physics + BE Electronics and Instrumentation from BITS, India</li>
-							<ul>
 
-								<li>Cryogenic probe: NISER, Bhubaneswar</li>
-								<li>Simulation of a reticle missile and its deflection: DRDO, India</li>
-								<li>Simulation of a BMS for EV: Kaynes, India</li>
-								<li>Master's Thesis on Josephson Junctions at NISER</li>
-							</ul>
-							<li>Research Software Engineer at MPSD, Hamburg</li>
-							<li>Software / Electronics Hobbyist</li>
+							<li>Cryogenic probe: NISER, Bhubaneswar</li>
+							<li>Simulation of a reticle missile and its deflection: DRDO, India</li>
+							<li>Simulation of a BMS for EV: Kaynes, India</li>
+							<li>Master's Thesis on Josephson Junctions at NISER</li>
 						</ul>
-					</section>
-					<section data-auto-animate>
-						<h2>Electronics projects</h2>
-						<video data-autoplay src="images/video/Imitato.mp4" type="video/mp4"></video>
-					</section>
-					<!-- <section data-auto-animate>
+						<li>Research Software Engineer at MPSD, Hamburg</li>
+						<li>Software / Electronics Hobbyist</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Electronics projects</h2>
+					<video data-autoplay src="images/video/Imitato.mp4" type="video/mp4"></video>
+				</section>
+			</section>
+			<!-- <section data-auto-animate>
 						<h2>Electronics projects</h2>
 					<img src="images/charge_a_battery_pro_max.jpg" alt="Imitato" style="width: 40%;">
 					</section> -->
 
-					<section>
-						<h3> Cryostat Probe Design</h3>
-						<!-- Add an image of the probe design -->
-						<img class="r-stretch" src="images/ProbeDesign.png" alt="Probe Design">
-
-						<table class="left-table"></table>
-							<tr>
-								<td><img src="images/logo/Logo_NISER.png" alt="NISER Logo"  height="100"></td>
-								<td>
-									<ul>
-										<li style="font-size: 36px;">Under Prof. Kartik Senapati</li>
-										<li style="font-size: 36px;">Superconductivity Lab, NISER, India</li>
-										<li style="font-size: 36px;">Summer 2019</li>
-									</ul>
-								</td>
-							</tr>
-
-						</table>
-
-					</section>
-					<section>
-						<h3>Cryostat arrangement</h3>
-						<!-- Add an image of the probe design -->
-						<img  src="images/cryostat_arrangement.png" alt="Arrangement of the cryostat in the lab">
-					</section>
-					<section>
-						<h3>Existing probe design</h3>
-						<!-- Add an image of the probe design -->
-						<img  src="images/probe_design_existing.png" alt="Existing probe design">
-					</section>
-
-					<section data-auto-animate>
-						<h3>CAD Model - I</h3>
-						<!-- Add an image of the probe design -->
-						<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
-						<h5>Sample holder for non magnetic measurements</h5>
-						<img src="images/logo/cad.png" alt="Fusion 360 Logo" style="width: 30%; position: absolute; top: 0; right: 0;">
-						<img src="images/cad_non_magnetic.png" alt="CAD Model for non magnetic model">
-					</section>
-
-
-					<section data-auto-animate>
-						<h3>CAD Model - II</h3>
-						<!-- Add an image of the probe design -->
-						<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
-						<h5>Sample holder for magnetic measurements</h5>
-						<img src="images/logo/cad.png" alt="Fusion 360 Logo" style="width: 30%; position: absolute; top: 0; right: 0;">
-						<img src="images/cad_magnetic.png" alt="CAD Model for  magnetic model">
-					</section>
-
-					<section data-auto-animate>
-						<h3>RC Filter design (low pass)</h3>
-						<!-- Add an image of the probe design -->
-						<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
-						<img src="images/logo/ltspice.png" alt="ltspice" style="width: 15%; position: absolute; top: 0; right: 0;">
-						$$ f_c = \frac{1}{2\pi RC}$$
-						<!-- Add a table with 1 row and 2 column with only the image and text 10% 90% -->
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 30%;"><img src="images/rc_ckt.png" alt="RC Filter ckt" style="width: 100%;">RC filter circuit used</td>
-								<td style="width: 70%;"><img src="images/rc_bode.png" alt="RC Filter ckt" style="width: 100%;">Measured Bode plot (strength vs frequency)</td>
-							</tr>
-						</table>
-					</section>
-
-					<section>
-						<h3>PCB Design</h3>
-						<br>
-						<img src="images/logo/eagle.jpeg" alt="Eagle cad Logo" style="width: 10%; position: absolute; top: 0; right: 0;">
-						<br>
-						<!-- Add an image of the probe design -->
-						<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/pcb_design.png" alt="PCB Design" style="width: 100%;">PCB Design</td>
-								<td style="width: 50%;"><img src="images/pcb_fab.png" alt="PCB fabricated" style="width: 100%;">Fabricated PCB</td>
-							</tr>
-						</table>
-					</section>
-
-					<section data-auto-animate>
-						<img src="images/logo/labview.png" alt="Labivew Logo" style="width: 10%; position: absolute; top: 0; right: 0;">
-						<h3>Software for data acquisition</h3>
-						<!-- Add an image of the probe design -->
-						<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
-						<img src="images/labview_setup.png" alt="Labview setup">
-					</section>
-
-					<section data-auto-animate>
-						<h3>Sample measurement</h3>
-						<!-- Add a table with 1 row and 2 column with only the image and text 10% 90% -->
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/nb_transition_sample.png" alt="RC Filter ckt" style="width: 100%;">Measured sample</td>
-								<td style="width: 50%;"><img src="images/nb_transition_plot.png" alt="RC Filter ckt" style="width: 100%;">Measured RT</td>
-							</tr>
-						</table>
-					</section>
-
-					<section>
-						<h3>Simulation of IR seeker missiles and its counter measure</h3>
-						<!-- Add an image of the probe design -->
-						<img class="r-stretch" src="images/Reticle.png" alt="Image of a Reticle based Missile">
-						<img src="images/logo/matlab.png" alt="Matlab" style="width: 20%; position: absolute; top: 0; right: 0;">
-
-						<table class="left-table"></table>
-							<tr>
-								<td><img src="images/logo/Logo_DRDO.png" alt="DRDO Logo"  height="100"></td>
-								<td> </td>
-								<td>
-									<ul>
-										<li style="font-size: 36px;">Defense Avionics Research Establishment </li>
-										<li style="font-size: 36px;">DRDO, Bangalore, India.</li>
-										<li style="font-size: 36px;">Summer 2019</li>
-									</ul>
-								</td>
-							</tr>
-
-						</table>
-
-					</section>
-					<section>
-						<h3>Design and Simulation of Battery Management System Algorithms for Electric Vehicle Applications</h3>
-						<!-- Add an image of the probe design -->
-						<img class="r-stretch" src="images/BMS_eq_ckt.png" alt="Image of a Reticle based Missile">
-
-
-						<table class="left-table"></table>
-							<tr>
-								<td><img src="images/logo/Logo_Kaynes.png" alt="Kaynes Logo"  height="60"></td>
-								<td> </td>
-								<td>
-									<ul>
-										<li style="font-size: 36px;">Kaynes Technology India Pvt Limited, Mysore, India </li>
-										<li style="font-size: 36px;">Summer 2020</li>
-									</ul>
-									</td>
-							</tr>
-
-						</table>
-
-					</section>
-					<section data-auto-animate>
-						<h3>Modeling of an EV Li-ion battery and drive parameters</h3>
-						<img src="images/logo/matlab.png" alt="Matlab" style="width: 20%; position: absolute; top: 0; right: 0;">
-						<img src="images/bmc_model.png" alt="CAD Model for  magnetic model">
-					</section>
-					<section>
-						<h3>Studying Rashba-Edelstein effect through Josephson Junction</h3>
-						<img class="r-stretch" src="images/JJ_sem_colour.png" alt="SEM JJ-device-colourised">
-
-						<table class="left-table"></table>
-							<tr>
-								<td><img src="images/logo/Logo_NISER.png" alt="NISER Logo"  height="100"></td>
-								<td>
-									<ul>
-										<li style="font-size: 36px;">Under Prof. Kartik Senapati</li>
-										<li style="font-size: 36px;">Superconductivity Lab, NISER, India</li>
-										<li style="font-size: 36px;">Master's Thesis 2020-21</li>
-									</ul>
-								</td>
-							</tr>
-
-						</table>
-
-					</section>
-
-				</section>
-
-				<!-- Introduction to Josephson Junctions -->
+			<!-- Introduction to Josephson Junctions -->
+			<section>
 				<section>
-					<section>
 					<h2>Introduction to Josephson Junctions</h2>
 
 					<div style="display: flex;">
@@ -281,34 +112,35 @@
 						</div>
 					</div>
 
-					</section>
+				</section>
 
 
-					<section data-auto-animate>
-						<h3>Josephson Relations - I</h3>
-						<ul>
-							<li>Current through a Josephson junction is given by
-								$$I_s = I_c \sin(\delta)$$
-							</li>
-							<li>Here, $I_c$ is the critical current and $\delta$ is the phase difference between the superconductors ($\phi_1 - \phi_2$).</li>
-						</ul>
-						<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
-					</section>
-					<section data-auto-animate>
-						<h3>Josephson Relations - II</h3>
-						<ul>
-							<li>Voltage across a Josephson junction is given by
-								$$V = \frac{\Phi_0}{2\pi} \frac{d\delta}{dt}$$
-							</li>
-							<li>Here, $\Phi_0$ is the magnetic flux quantum.
-								$$\Phi_0 = \frac{h}{2e} ~ 2.067\mathrm{x}10^{-15} Wb$$
-							</li>
+				<section data-auto-animate>
+					<h3>Josephson Relations - I</h3>
+					<ul>
+						<li>Current through a Josephson junction is given by
+							$$I_s = I_c \sin(\delta)$$
+						</li>
+						<li>Here, $I_c$ is the critical current and $\delta$ is the phase difference between the
+							superconductors ($\phi_1 - \phi_2$).</li>
+					</ul>
+					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
+				</section>
+				<section data-auto-animate>
+					<h3>Josephson Relations - II</h3>
+					<ul>
+						<li>Voltage across a Josephson junction is given by
+							$$V = \frac{\Phi_0}{2\pi} \frac{d\delta}{dt}$$
+						</li>
+						<li>Here, $\Phi_0$ is the magnetic flux quantum.
+							$$\Phi_0 = \frac{h}{2e} ~ 2.067\mathrm{x}10^{-15} Wb$$
+						</li>
 
-						</ul>
-						<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
-					</section>
+					</ul>
+					<img src="images/JJ.svg" alt="Josephson Junction" style="width: 45%;">
+				</section>
 
-<!--
+				<!--
 					<section data-auto-animate>
 						<h3>Josephson Relations</h3>
 						<ul>
@@ -318,193 +150,215 @@
 							<li>Here, $E_J$ is the Josephson energy.</li>
 						</ul>
 					</section> -->
-					<section data-auto-animate>
-						<h3>Josephson Junction in a Magnetic Field</h3>
-						<ul>
-							<li>When a magnetic field is applied, the phase difference $\delta$ changes.</li>
-							<li> In case of small junctions, the current magnetic field relation is given by
-								$$I_{c}=I_{0}\left|\frac{\sin\left(\pi\frac{\Phi_{J}}{\Phi_{0}}\right)}{\pi\frac{\Phi_{J}}{\Phi_{0}}}\right|$$
-							</li>
-							<li>Here, $\Phi_{J}=\mu_{0}HLd$ is the magnetic flux through the junction area.</li>
-						</ul>
-					</section>
-					<section data-auto-animate>
-						<h3>Josephson Junction in a Magnetic Field</h3>
-						<ul>
-							<li> This is of the standard Fraunhofer pattern form.</li>
-							$F(x)=I_{0}|\frac{\sin{\pi x}}{\pi x}|$
-							<li> A signature of Josephson Junction</li>
+				<section data-auto-animate>
+					<h3>Josephson Junction in a Magnetic Field</h3>
+					<ul>
+						<li>When a magnetic field is applied, the phase difference $\delta$ changes.</li>
+						<li> In case of small junctions, the current magnetic field relation is given by
+							$$I_{c}=I_{0}\left|\frac{\sin\left(\pi\frac{\Phi_{J}}{\Phi_{0}}\right)}{\pi\frac{\Phi_{J}}{\Phi_{0}}}\right|$$
+						</li>
+						<li>Here, $\Phi_{J}=\mu_{0}HLd$ is the magnetic flux through the junction area.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Josephson Junction in a Magnetic Field</h3>
+					<ul>
+						<li> This is of the standard Fraunhofer pattern form.</li>
+						$F(x)=I_{0}|\frac{\sin{\pi x}}{\pi x}|$
+						<li> A signature of Josephson Junction</li>
 						<!-- Plot the Fraunhofer pattern as a graph using chart.js -->
-						</ul>
-						<td></td>
+					</ul>
+					<td></td>
 					<!-- <img src="images/fraunhofer_pattern.png" alt="Fraunhofer pattern" style="width: 50%;"> -->
 					<!-- A Table with one row and one column with only the image and text  -->
 					<table style="width: 50%; font-size: 15px; text-align: center;">
 						<tr>
-							<td style="width: 60%;"><img src="images/fraunhofer_pattern.png" alt="Fraunhofer pattern" style="width: 100%;">Example plot of the JJ Fraunhofer pattern [ E. R. Caianiello et. al. Journal of Modern Physics
+							<td style="width: 60%;"><img src="images/fraunhofer_pattern.png" alt="Fraunhofer pattern"
+									style="width: 100%;">Example plot of the JJ Fraunhofer pattern [ E. R. Caianiello
+								et. al. Journal of Modern Physics
 								Vol.06 No.05(2015) ]</td>
 						</tr>
 					</table>
 
-					</section>
+				</section>
 
-					<section data-auto-animate>
-						<h3>Simulating a normal Josephson Junction</h3>
-						<div style="display: flex;">
-							<div style="width: 70%;">
-								<ul>
-									<li>Resistively and capacitively shunted junction model (RCSJ).</li>
-									<p class="fragment">$$ \frac{\Phi_0}{2\pi}C \ddot{\delta} + \frac{\Phi_0}{2\pi R}  \dot{\delta} = I-I_c\sin{\delta}$$</p>
-									<p class="fragment">Rearranging, we get
-									$$ \ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta)) $$ </p>
-								</ul>
-							</div>
-							<div style="width: 30%;">
-								<img src="images/RCSJ.svg" alt="RCSJ model" style="width: 100%;">
-							</div>
+				<section data-auto-animate>
+					<h3>Simulating a normal Josephson Junction</h3>
+					<div style="display: flex;">
+						<div style="width: 70%;">
+							<ul>
+								<li>Resistively and capacitively shunted junction model (RCSJ).</li>
+								<p class="fragment">$$ \frac{\Phi_0}{2\pi}C \ddot{\delta} + \frac{\Phi_0}{2\pi R}
+									\dot{\delta} = I-I_c\sin{\delta}$$</p>
+								<p class="fragment">Rearranging, we get
+									$$
+									\ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta))
+									$$ </p>
+							</ul>
 						</div>
-					</section>
-					<section data-auto-animate>
-						<h3>The RCSJ Model</h3>
-						<div style="display: flex;">
-							<div style="width: 70%;">
-								<ul>
-									Rearranging, we get
-									$$ \ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta)) $$
-									<li> dynamics of $\delta$ resembles a damped particle with </li>
-									<ul>
-										<li> Effective mass $C$ </li>
-										<li> Coefficient of friction $\frac{1}{R}$ </li>
-										<li> Potential on the particle  $-(\frac{2\pi}{C\Phi_{0}})(I\delta-I_{c}\delta\sin(\delta))$ </li>
-									</ul>
-
-								</ul>
-							</div>
-							<div style="width: 30%;">
-								<img src="images/RCSJ.svg" alt="RCSJ model" style="width: 100%;">
-							</div>
+						<div style="width: 30%;">
+							<img src="images/RCSJ.svg" alt="RCSJ model" style="width: 100%;">
 						</div>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>The RCSJ Model</h3>
+					<div style="display: flex;">
+						<div style="width: 70%;">
+							<ul>
+								Rearranging, we get
+								$$ \ddot{\delta}+\frac{1}{RC}\dot{\delta}=(\frac{2\pi}{C\Phi_{0}})(I-I_{c}\sin(\delta))
+								$$
+								<li> dynamics of $\delta$ resembles a damped particle with </li>
+								<ul>
+									<li> Effective mass $C$ </li>
+									<li> Coefficient of friction $\frac{1}{R}$ </li>
+									<li> Potential on the particle
+										$-(\frac{2\pi}{C\Phi_{0}})(I\delta-I_{c}\delta\sin(\delta))$ </li>
+								</ul>
 
+							</ul>
+						</div>
+						<div style="width: 30%;">
+							<img src="images/RCSJ.svg" alt="RCSJ model" style="width: 100%;">
+						</div>
+					</div>
+
+				</section>
+
+				<section data-background-image="images/JJ-IV.png" data-background-size="80%">
+					<h3>IV Characteristics</h3>
+
+					<section>
+						<!-- Rest of the code -->
 					</section>
 
-					<section data-background-image="images/JJ-IV.png" data-background-size="80%">
-						<h3>IV Characteristics</h3>
-
-						<section>
-							<!-- Rest of the code -->
-						</section>
-
-						<span style="font-size: 20px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">PC: stackoverflow</span>
-					</section>
-					<!-- <section>
+					<span
+						style="font-size: 20px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">PC:
+						stackoverflow</span>
+				</section>
+				<!-- <section>
 						<h3>IV Characteristics</h3>
 						<img src="images/JJ-IV.png" alt="IV Characteristics" style="width: 100%;">
 
 
 					</section> -->
 
+			</section>
+
+
+			<!-- Rashba Edelstein Effect -->
+			<section>
+				<section data-auto-animate>
+					<h2>Rashba Edelstein Effect</h2>
+					<div style="display: flex;">
+						<div style="width: 70%;">
+							<ul>
+								<li>Interface effect between NM and HM.</li>
+								<li>Generates a spin density (polarization) perpendicular to the charge current.</li>
+							</ul>
+						</div>
+						<div style="width: 50%;">
+							<img src="images/rashba_schematic.png" alt="Rashba Edelstein Effect" style="width: 100%;">
+						</div>
+					</div>
+					<p style="font-size:medium;">[V.M. Edelstein, Solid State Communications,Volume 73,issue 3,1990]</p>
+					<!-- Add a note that this is opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect. -->
+					<aside class="notes">
+						<p>Opposite to the spin Hall effect where they create a spin current with a charge current which
+							can be transfered to a feromagentic layer to detect.</p>
+					</aside>
+
+				</section>
+				<section data-auto-animate>
+					<h2>Detection of Rashba-Edelstein Effect</h2>
+					<ul>
+						<li>Interface effect $\implies$ Direct detection is not easy</li>
+					</ul>
+
+					<h4>Reported sofar:</h4>
+
+					<ul>
+						<li> Detection via inverse Rashba-Edelstein effect</li>
+						<li> Interaction of charge current with spin density at the interface via FMR</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- Phase biasing of a Josephson junction using Rashba–Edelstein effect -->
+			<section>
+				<section>
+					<h2>Phase biasing of a Josephson junction using Rashba-Edelstein effect</h2>
+					<div style="display: flex;">
+						<div style="width: 70%;">
+							<br>
+							<br>
+							<ul>
+								<li>Part of Master's Thesis (2021) </li>
+								<li>Prof Kartik Senapati, Superconductivity Lab,
+									NISER, India.</li>
+							</ul>
+							<!-- Add white space so that logo goes to the bottom -->
+							<br>
+							<br>
+							<!-- Insert niser logo  -->
+							<img src="images/logo/Logo_NISER.png" alt="NISER" style="width: 15%;">
+						</div>
+						<div style="width: 50%;">
+							<img src="images/JJ-planar-pt-full.svg" alt="Rashba Edelstein Effect" style="width: 100%;">
+						</div>
+					</div>
 				</section>
 
-
-				<!-- Rashba Edelstein Effect -->
 				<section>
-					<section data-auto-animate>
-						<h2>Rashba Edelstein Effect</h2>
-						<div style="display: flex;">
-							<div style="width: 70%;">
-								<ul>
-									<li>Interface effect between NM and HM.</li>
-									<li>Generates a spin density (polarization) perpendicular to the charge current.</li>
-								</ul>
-							</div>
-							<div style="width: 50%;">
-								<img src="images/rashba_schematic.png" alt="Rashba Edelstein Effect" style="width: 100%;">
-							</div>
-						</div>
-						<p style="font-size:medium;">[V.M. Edelstein, Solid State Communications,Volume 73,issue 3,1990]</p>
-						<!-- Add a note that this is opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect. -->
-						<aside class="notes">
-							<p>Opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect.</p>
-						</aside>
+					<h3>Sample preparation</h3>
+					<!-- Create a table with 2 rows and 4 columns (10%,30%,30%,30%) table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 10%; font-weight: bold;">Instrument</td>
+							<td style="width: 25%;"><img src="images/inst_uv_mask.jpeg" alt="UV Mask Aligner"
+									style="width: 70%;"><br> UV Mask Aligner</td>
+							<td style="width: 35%;"><img src="images/inst_sputtering.jpeg" alt="DC Magnetron sputtering"
+									style="width: 100%;">DC Magnetron sputtering</td>
+							<td style="width: 30%;"><img src="images/inst_FIB.png" alt="Ga - FIB + SEM (Crossbeam 340)"
+									style="width: 100%;">Ga - FIB + SEM (Crossbeam 340)</td>
+						</tr>
+						<tr>
+							<td style="width: 10%; font-weight: bold;">Stage</td>
+							<td style="width: 30%;"><img src="images/stage_photolithography.jpeg" alt="Photolithography"
+									style="width: 100%;">Photolithography</td>
+							<td style="width: 15%;"><img src="images/stage_trilayer_deposition.jpeg"
+									alt="Tri-layer deposition" style="width: 100%;">Tri-layer deposition</td>
+							<td style="height: 100%;"><img src="images/stage_final_sample.jpeg" alt="Final Sample"
+									style="width: 100%;">Final Sample</td>
+						</tr>
+					</table>
 
-					</section>
-					<section data-auto-animate>
-						<h2>Detection of Rashba-Edelstein Effect</h2>
-						<ul>
-							<li>Interface effect $\implies$ Direct detection is not easy</li>
-						</ul>
-
-						<h4>Reported sofar:</h4>
-
-						<ul>
-							<li> Detection via inverse Rashba-Edelstein effect</li>
-							<li> Interaction of charge current with spin density at the interface via FMR</li>
-						</ul>
-					</section>
 				</section>
 
-				<!-- Phase biasing of a Josephson junction using Rashba–Edelstein effect -->
 				<section>
-					<section>
-						<h2>Phase biasing of a Josephson junction using Rashba-Edelstein effect</h2>
-						<div style="display: flex;">
-							<div style="width: 70%;">
-								<br>
-								<br>
-								<ul>
-									<li>Part of Master's Thesis (2021) </li>
-									<li>Prof Kartik Senapati, Superconductivity Lab,
-										NISER, India.</li>
-								</ul>
-								<!-- Add white space so that logo goes to the bottom -->
-								<br>
-								<br>
-								<!-- Insert niser logo  -->
-								<img src="images/logo/Logo_NISER.png" alt="NISER" style="width: 15%;">
-							</div>
-							<div style="width: 50%;">
-								<img src="images/JJ-planar-pt-full.svg" alt="Rashba Edelstein Effect" style="width: 100%;">
-							</div>
-						</div>
-					</section>
+					<h3>Junction Geometries</h3>
+					<!-- Create a table with 2 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/JJ_Vertical.jpeg" alt="Vertical Josephson Junction"
+									style="width: 100%;"></td>
+							<td style="width: 50%;"><img src="images/JJ_planar.jpeg" alt="Planar Josephson Junction"
+									style="width: 100%;"></td>
+						</tr>
+						<tr>
+							<td style="width: 50%;"><img src="images/JJ_schematic_vertical.png"
+									alt="Vertical Josephson Junction Schematic" style="width: 100%;"> Vertical Josephson
+								Junction</td>
+							<td style="width: 50%;"><img src="images/JJ_schematic_Planar.png"
+									alt="Planar Josephson Junction Schematic" style="width: 100%;"> Planar Josephson
+								Junction</td>
+						</tr>
+					</table>
 
-					<section>
-						<h3>Sample preparation</h3>
-						<!-- Create a table with 2 rows and 4 columns (10%,30%,30%,30%) table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 10%; font-weight: bold;">Instrument</td>
-								<td style="width: 25%;"><img src="images/inst_uv_mask.jpeg" alt="UV Mask Aligner" style="width: 70%;"><br> UV Mask Aligner</td>
-								<td style="width: 35%;"><img src="images/inst_sputtering.jpeg" alt="DC Magnetron sputtering" style="width: 100%;">DC Magnetron sputtering</td>
-								<td style="width: 30%;"><img src="images/inst_FIB.png" alt="Ga - FIB + SEM (Crossbeam 340)" style="width: 100%;">Ga - FIB + SEM (Crossbeam 340)</td>
-							</tr>
-							<tr>
-								<td style="width: 10%; font-weight: bold;">Stage</td>
-								<td style="width: 30%;"><img src="images/stage_photolithography.jpeg" alt="Photolithography" style="width: 100%;">Photolithography</td>
-								<td style="width: 15%;"><img src="images/stage_trilayer_deposition.jpeg" alt="Tri-layer deposition" style="width: 100%;">Tri-layer deposition</td>
-								<td style="height: 100%;"><img src="images/stage_final_sample.jpeg" alt="Final Sample" style="width: 100%;">Final Sample</td>
-							</tr>
-						</table>
+				</section>
 
-					</section>
-
-					<section>
-						<h3>Junction Geometries</h3>
-						<!-- Create a table with 2 rows and 2 columns table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/JJ_Vertical.jpeg" alt="Vertical Josephson Junction" style="width: 100%;"></td>
-								<td style="width: 50%;"><img src="images/JJ_planar.jpeg" alt="Planar Josephson Junction" style="width: 100%;"></td>
-							</tr>
-							<tr>
-								<td style="width: 50%;"><img src="images/JJ_schematic_vertical.png" alt="Vertical Josephson Junction Schematic" style="width: 100%;">   Vertical Josephson Junction</td>
-								<td style="width: 50%;"><img src="images/JJ_schematic_Planar.png" alt="Planar Josephson Junction Schematic" style="width: 100%;">   Planar Josephson Junction</td>
-							</tr>
-						</table>
-
-					</section>
-
-					<!-- <section>
+				<!-- <section>
 						<h3>Junction Geometries</h3>
 						<table style="width: 100%;height: 100%; font-size: 20px;">
 							<tr>
@@ -519,230 +373,467 @@
 
 					</section> -->
 
-					<section>
-						<h3>Fabrication of device</h3>
-						<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/FIB_Schematic.png" alt="Schematic of an FIB" style="width: 100%;"></td>
-								<td style="width: 50%;"><img src="images/JJ-planar-pt-full.svg" alt="Fabrication of device" style="width: 100%;"></td>
-							</tr>
-						</table>
-					</section>
-
-					<section data-background-image="images/JJ_sem_colour.png">
-						<h3 style="color: rgba(255, 255, 255, 0.75);">SEM Image of the device</h3>
-						<h5 style="color: rgba(255, 255, 255, 0.75);">(With false colours indicating the layers)</h5>
-						<section>
-							<!-- push the heading up -->
-						</section>
-
-					</section>
-
-					<section>
-						<h3>Transport measurement</h3>
-						Josephson Junction characteristics measurements
-
-						<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/JJ_RT.jpeg" alt="JJ RT measurement" style="width: 100%;">RT plot of a JJ showing transition of electrode and proximatisation of Cu. Inset IV of the same device</td>
-								<td style="width: 50%;"><img src="images/JJ_VH.jpeg" alt="JJ VH measurement" style="width: 100%;">VH plot of the JJ showing the characteristic Fraunhofer Pattern</td>
-							</tr>
-						</table>
-					</section>
-
-					<section>
-						<h3>Rashba-Edelstein effect in JJs and SQUIDs</h3>
-						<!-- Insert the image of the SQUID and JJ with Rashba-Edelstein effect -->
-						<img src="images/Measurement plots.png" alt="JJ and SQUID with Rashba-Edelstein effect" style="width: 65%;">
-						<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
-					</section>
-					<section>
-						<h3>Simulation to verify $I_cH$ vs $VH$</h3>
-						<!-- Insert the image of python logo on the top right of the slide and on top of all the text  -->
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<ul>
-							<li>Simulated using the RCSJ model.</li>
-							<li>Compared the $I_cH$ and $VH$ patterns (periodicity at $\frac{\Phi_J}{\Phi_0}$)</li>
-						</ul>
-						<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/sim_ich.png" alt="Normalised Plot of simulated IcH" style="width: 100%;">Normalised Plot of simulated $I_cH$</td>
-								<td style="width: 50%;"><img src="images/sim_vh.png" alt="Normalised Plot of simulated VH" style="width: 100%;">Normalised Plot of simulated $VH$</td>
-							</tr>
-						</table>
-					</section>
-					<section>
-						<h3>Mechanism explanation in JJ</h3>
-						<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
-						<table style="width: 100%;height: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/JJ_above_Tc.png" alt="Physical effects in JJ above Tc" style="width: 100%;">Physical effects in JJ above $T_c$</td>
-								<td style="width: 50%;"><img src="images/JJ_belowTc.png" alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ below $T_c$</td>
-							</tr>
-						</table>
-						<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
-					</section>
-
-					<section>
-						<h3>Publication</h3>
-						<!-- Insert image of publication  -->
-						<img src="images/ourPaper.png" alt="Nature Comications publication" style="width: 70%;">
-						<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)</p>
-					</section>
-					<section>
-						<h3>Conclusion</h3>
-						<ul>
-							<li>Direct detection of Rashba-Edelstein effect is possible using Josephson Junctions.</li>
-							<li>Phase difference $\delta$ of the junction can be tuned by the junction geometry.</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Auxilary work : Automated $I_c$ extraction</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<br>
-						<table style="width: 100%; font-size: 22px;">
-							<tr>
-								<td style="width: 70%;"><img src="images/auto_ic_plot.png" alt="PCB Design" style="width: 100%;">Plot of $\frac{dV}{dI}$ and its derivative vs I</td>
-								<td style="width: 30%;"><img src="images/auto_ic_ic.jpeg" alt="PCB fabricated" style="width: 100%;">IV curve of a normal JJ</td>
-							</tr>
-						</table>
-					</section>
-
-					<section>
-						<h3>Auxilary work:</h3><h3>Control of scientific measurement with python</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<img src="images/py_instrumentation.png" alt="py instrumentation">
-
-					</section>
+				<section>
+					<h3>Fabrication of device</h3>
+					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/FIB_Schematic.png" alt="Schematic of an FIB"
+									style="width: 100%;"></td>
+							<td style="width: 50%;"><img src="images/JJ-planar-pt-full.svg" alt="Fabrication of device"
+									style="width: 100%;"></td>
+						</tr>
+					</table>
 				</section>
 
-
-				<!-- RSE experience -->
-
-				<section>
-
+				<section data-background-image="images/JJ_sem_colour.png">
+					<h3 style="color: rgba(255, 255, 255, 0.75);">SEM Image of the device</h3>
+					<h5 style="color: rgba(255, 255, 255, 0.75);">(With false colours indicating the layers)</h5>
 					<section>
-						<h3>Work as a Research Software Engineer</h3>
-						<img src="images/MPCDF.jpeg" alt="MPCDF Server room" style="width: 50%;">
-						<p style="font-size:large;">Server room at MPCDF <span style="font-size: 10px;">PC: Prof. Hans Fangohr</span></p>
-
-						<table class="right-table"></table>
-							<tr>
-								<td><img src="images/logo/Logo_MPSD.png" alt="MPSD Logo"  height="100"></td>
-								<td> </td>
-								<td>
-									<ul>
-										<li style="font-size: 36px;">Prof. Hans Fangohr </li>
-										<li style="font-size: 36px;">Max Planck Institute MPSD, Hamburg</li>
-										<li style="font-size: 36px;">2022 onwards</li>
-									</ul>
-								</td>
-							</tr>
-
-						</table>
-
-					</section>
-					<section data-background-image="images/github.png" data-background-size="80%" data-background-color="#090e17">
-
-					</section>
-
-					<section>
-						<h3>Postopus : POST processing of OctoPUS data</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 100%;"><img src="images/postopus1.png" alt="Postopus" style="width: 80%;">Post processing of Benzene DFT calculation</td>
-							</tr>
-						</table>
-					</section>
-					<section>
-						<h3>Postopus : POST processing of OctoPUS data</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 100%;"><img src="images/postopus2.png" alt="Postopus" style="width: 80%;">Plot forces on Benzene electron density</td>
-							</tr>
-						</table>
-					</section>
-					<section>
-						<h3>Postopus : POST processing of OctoPUS data</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 100%;"><img src="images/postopus3.jpeg" alt="Postopus" style="width: 80%;"> <br>Slice of Benzene electron density</td>
-							</tr>
-						</table>
-					</section>
-
-					<section>
-						<h3>ML on micromagnetic configuration</h3>
-						<img src="images/logo/python.png" alt="Python Logo" style="width: 7%; position: absolute; top: 0; right: 0;">
-						<table style="width: 100%; font-size: 20px;">
-							<tr>
-								<td style="width: 60%;"><img src="images/mm_cfg_1.png" alt="MM CFG" style="width: 100%;"><br> The energy density difference between identified equilibrium states and the corresponding ground state.<br>[Beg, M., Carey, R., Wang, W. et al. Sci Rep 5, 17137 (2015).]</td>
-								<td style="width: 40%;"><img src="images/mm_cfg_2.png" alt="Postopus" style="width: 80%;"> Example magnetic configurations <br><span style="font-size:small;">PC: Swapneel</span> </td>
-							</tr>
-						</table>
-					</section>
-				</section>
-
-				<!-- My interest in functional metal oxides -->
-				<section>
-
-					<section>
-						<h3>My interest in functional metal oxides</h3>
-						<table style="width: 100%; font-size: 22px;">
-							<tr>
-								<td style="width: 50%;"><img src="images/crossbar-drawn.png" alt="Memristive crossbar" style="width: 100%;">HZO Memristive crossbar array for vector multiplication applications</td>
-								<td style="width: 50%;"><img src="images/rnn.svg" alt="PCB fabricated" style="width: 100%;"><br>A physical reservoir computing scheme uses a magnetic reservoir or ferroelectric reservoir (here made from domain walls) (center) for clustering.<br>[inspired from Karin Everschor-Sitte et. al. arXiv (2023)]</td>
-							</tr>
-						</table>
+						<!-- push the heading up -->
 					</section>
 
 				</section>
 
 				<section>
+					<h3>Transport measurement</h3>
+					Josephson Junction characteristics measurements
 
-					<section>
-						<h2>Thank you!</h2>
-					</section>
+					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/JJ_RT.jpeg" alt="JJ RT measurement"
+									style="width: 100%;">RT plot of a JJ showing transition of electrode and
+								proximatisation of Cu. Inset IV of the same device</td>
+							<td style="width: 50%;"><img src="images/JJ_VH.jpeg" alt="JJ VH measurement"
+									style="width: 100%;">VH plot of the JJ showing the characteristic Fraunhofer Pattern
+							</td>
+						</tr>
+					</table>
 				</section>
+
+				<section>
+					<h3>Rashba-Edelstein effect in JJs and SQUIDs</h3>
+					<!-- Insert the image of the SQUID and JJ with Rashba-Edelstein effect -->
+					<img src="images/Measurement plots.png" alt="JJ and SQUID with Rashba-Edelstein effect"
+						style="width: 65%;">
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
+					</p>
+				</section>
+				<section>
+					<h3>Simulation to verify $I_cH$ vs $VH$</h3>
+					<!-- Insert the image of python logo on the top right of the slide and on top of all the text  -->
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<ul>
+						<li>Simulated using the RCSJ model.</li>
+						<li>Compared the $I_cH$ and $VH$ patterns (periodicity at $\frac{\Phi_J}{\Phi_0}$)</li>
+					</ul>
+					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/sim_ich.png" alt="Normalised Plot of simulated IcH"
+									style="width: 100%;">Normalised Plot of simulated $I_cH$</td>
+							<td style="width: 50%;"><img src="images/sim_vh.png" alt="Normalised Plot of simulated VH"
+									style="width: 100%;">Normalised Plot of simulated $VH$</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Mechanism explanation in JJ</h3>
+					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/JJ_above_Tc.png"
+									alt="Physical effects in JJ above Tc" style="width: 100%;">Physical effects in JJ
+								above $T_c$</td>
+							<td style="width: 50%;"><img src="images/JJ_belowTc.png"
+									alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ
+								below $T_c$</td>
+						</tr>
+					</table>
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
+					</p>
+				</section>
+
+				<section>
+					<h3>Publication</h3>
+					<!-- Insert image of publication  -->
+					<img src="images/ourPaper.png" alt="Nature Comications publication" style="width: 70%;">
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
+					</p>
+				</section>
+				<section>
+					<h3>Conclusion</h3>
+					<ul>
+						<li>Direct detection of Rashba-Edelstein effect is possible using Josephson Junctions.</li>
+						<li>Phase difference $\delta$ of the junction can be tuned by the junction geometry.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Auxilary work : Automated $I_c$ extraction</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<br>
+					<table style="width: 100%; font-size: 22px;">
+						<tr>
+							<td style="width: 70%;"><img src="images/auto_ic_plot.png" alt="PCB Design"
+									style="width: 100%;">Plot of $\frac{dV}{dI}$ and its derivative vs I</td>
+							<td style="width: 30%;"><img src="images/auto_ic_ic.jpeg" alt="PCB fabricated"
+									style="width: 100%;">IV curve of a normal JJ</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h3>Auxilary work:</h3>
+					<h3>Control of scientific measurement with python</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<img src="images/py_instrumentation.png" alt="py instrumentation">
+
+				</section>
+			</section>
+
+
+			<!-- Other and RSE experience -->
+
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+						## Other works
+
+						- Cryostat Probe Design
+						- Simulation of IR seeker missiles and its counter measure
+						- Design and Simulation of Battery Management System Algorithms for Electric Vehicle Applications
+						- Scientific software development
+					</textarea>
+				</section>
+
+
+				<section>
+					<h3> Cryostat Probe Design</h3>
+					<!-- Add an image of the probe design -->
+					<img class="r-stretch" src="images/ProbeDesign.png" alt="Probe Design">
+
+					<table class="left-table"></table>
+					<tr>
+						<td><img src="images/logo/Logo_NISER.png" alt="NISER Logo" height="100"></td>
+						<td>
+							<ul>
+								<li style="font-size: 36px;">Under Prof. Kartik Senapati</li>
+								<li style="font-size: 36px;">Superconductivity Lab, NISER, India</li>
+								<li style="font-size: 36px;">Summer 2019</li>
+							</ul>
+						</td>
+					</tr>
+
+					</table>
+
+				</section>
+				<section>
+					<h3>Cryostat arrangement</h3>
+					<!-- Add an image of the probe design -->
+					<img src="images/cryostat_arrangement.png" alt="Arrangement of the cryostat in the lab">
+				</section>
+				<section>
+					<h3>Existing probe design</h3>
+					<!-- Add an image of the probe design -->
+					<img src="images/probe_design_existing.png" alt="Existing probe design">
+				</section>
+
+				<section data-auto-animate>
+					<h3>CAD Model - I</h3>
+					<!-- Add an image of the probe design -->
+					<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
+					<h5>Sample holder for non magnetic measurements</h5>
+					<img src="images/logo/cad.png" alt="Fusion 360 Logo"
+						style="width: 30%; position: absolute; top: 0; right: 0;">
+					<img src="images/cad_non_magnetic.png" alt="CAD Model for non magnetic model">
+				</section>
+
+
+				<section data-auto-animate>
+					<h3>CAD Model - II</h3>
+					<!-- Add an image of the probe design -->
+					<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
+					<h5>Sample holder for magnetic measurements</h5>
+					<img src="images/logo/cad.png" alt="Fusion 360 Logo"
+						style="width: 30%; position: absolute; top: 0; right: 0;">
+					<img src="images/cad_magnetic.png" alt="CAD Model for  magnetic model">
+				</section>
+
+				<section data-auto-animate>
+					<h3>RC Filter design (low pass)</h3>
+					<!-- Add an image of the probe design -->
+					<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
+					<img src="images/logo/ltspice.png" alt="ltspice"
+						style="width: 15%; position: absolute; top: 0; right: 0;">
+					$$ f_c = \frac{1}{2\pi RC}$$
+					<!-- Add a table with 1 row and 2 column with only the image and text 10% 90% -->
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 30%;"><img src="images/rc_ckt.png" alt="RC Filter ckt"
+									style="width: 100%;">RC filter circuit used</td>
+							<td style="width: 70%;"><img src="images/rc_bode.png" alt="RC Filter ckt"
+									style="width: 100%;">Measured Bode plot (strength vs frequency)</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h3>PCB Design</h3>
+					<br>
+					<img src="images/logo/eagle.jpeg" alt="Eagle cad Logo"
+						style="width: 10%; position: absolute; top: 0; right: 0;">
+					<br>
+					<!-- Add an image of the probe design -->
+					<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/pcb_design.png" alt="PCB Design"
+									style="width: 100%;">PCB Design</td>
+							<td style="width: 50%;"><img src="images/pcb_fab.png" alt="PCB fabricated"
+									style="width: 100%;">Fabricated PCB</td>
+						</tr>
+					</table>
+				</section>
+
+				<section data-auto-animate>
+					<img src="images/logo/labview.png" alt="Labivew Logo"
+						style="width: 10%; position: absolute; top: 0; right: 0;">
+					<h3>Software for data acquisition</h3>
+					<!-- Add an image of the probe design -->
+					<!-- Add logos of onshape and fusion 360 at the top right of the slide and on top of all the text -->
+					<img src="images/labview_setup.png" alt="Labview setup">
+				</section>
+
+				<section data-auto-animate>
+					<h3>Sample measurement</h3>
+					<!-- Add a table with 1 row and 2 column with only the image and text 10% 90% -->
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/nb_transition_sample.png" alt="RC Filter ckt"
+									style="width: 100%;">Measured sample</td>
+							<td style="width: 50%;"><img src="images/nb_transition_plot.png" alt="RC Filter ckt"
+									style="width: 100%;">Measured RT</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h3>Simulation of IR seeker missiles and its counter measure</h3>
+					<!-- Add an image of the probe design -->
+					<img class="r-stretch" src="images/Reticle.png" alt="Image of a Reticle based Missile">
+					<img src="images/logo/matlab.png" alt="Matlab"
+						style="width: 20%; position: absolute; top: 0; right: 0;">
+
+					<table class="left-table"></table>
+					<tr>
+						<td><img src="images/logo/Logo_DRDO.png" alt="DRDO Logo" height="100"></td>
+						<td> </td>
+						<td>
+							<ul>
+								<li style="font-size: 36px;">Defense Avionics Research Establishment </li>
+								<li style="font-size: 36px;">DRDO, Bangalore, India.</li>
+								<li style="font-size: 36px;">Summer 2019</li>
+							</ul>
+						</td>
+					</tr>
+
+					</table>
+
+				</section>
+				<section>
+					<h3>Design and Simulation of Battery Management System Algorithms for Electric Vehicle Applications
+					</h3>
+					<!-- Add an image of the probe design -->
+					<img class="r-stretch" src="images/BMS_eq_ckt.png" alt="Image of a Reticle based Missile">
+
+
+					<table class="left-table"></table>
+					<tr>
+						<td><img src="images/logo/Logo_Kaynes.png" alt="Kaynes Logo" height="60"></td>
+						<td> </td>
+						<td>
+							<ul>
+								<li style="font-size: 36px;">Kaynes Technology India Pvt Limited, Mysore, India </li>
+								<li style="font-size: 36px;">Summer 2020</li>
+							</ul>
+						</td>
+					</tr>
+
+					</table>
+
+				</section>
+				<section data-auto-animate>
+					<h3>Modeling of an EV Li-ion battery and drive parameters</h3>
+					<img src="images/logo/matlab.png" alt="Matlab"
+						style="width: 20%; position: absolute; top: 0; right: 0;">
+					<img src="images/bmc_model.png" alt="CAD Model for  magnetic model">
+				</section>
+				<section>
+					<h3>Studying Rashba-Edelstein effect through Josephson Junction</h3>
+					<img class="r-stretch" src="images/JJ_sem_colour.png" alt="SEM JJ-device-colourised">
+
+					<table class="left-table"></table>
+					<tr>
+						<td><img src="images/logo/Logo_NISER.png" alt="NISER Logo" height="100"></td>
+						<td>
+							<ul>
+								<li style="font-size: 36px;">Under Prof. Kartik Senapati</li>
+								<li style="font-size: 36px;">Superconductivity Lab, NISER, India</li>
+								<li style="font-size: 36px;">Master's Thesis 2020-21</li>
+							</ul>
+						</td>
+					</tr>
+
+					</table>
+
+				</section>
+
+			</section>
+			<!-- RSE Work -->
+			<section>
+				<section>
+					<h3>Work as a Research Software Engineer</h3>
+					<img src="images/MPCDF.jpeg" alt="MPCDF Server room" style="width: 50%;">
+					<p style="font-size:large;">Server room at MPCDF <span style="font-size: 10px;">PC: Prof. Hans
+							Fangohr</span></p>
+
+					<table class="right-table"></table>
+					<tr>
+						<td><img src="images/logo/Logo_MPSD.png" alt="MPSD Logo" height="100"></td>
+						<td> </td>
+						<td>
+							<ul>
+								<li style="font-size: 36px;">Prof. Hans Fangohr </li>
+								<li style="font-size: 36px;">Max Planck Institute MPSD, Hamburg</li>
+								<li style="font-size: 36px;">2022 onwards</li>
+							</ul>
+						</td>
+					</tr>
+
+					</table>
+
+				</section>
+				<section data-background-image="images/github.png" data-background-size="80%"
+					data-background-color="#090e17">
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Postopus : POST processing of OctoPUS data</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 100%;"><img src="images/postopus1.png" alt="Postopus"
+									style="width: 80%;">Post processing of Benzene DFT calculation</td>
+						</tr>
+					</table>
+				</section>
+				<section data-visibility="hidden">
+					<h3>Postopus : POST processing of OctoPUS data</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 100%;"><img src="images/postopus2.png" alt="Postopus"
+									style="width: 80%;">Plot forces on Benzene electron density</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Postopus : POST processing of OctoPUS data</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<span style="font-size: 20px;">Post processing of Benzene DFT calculation</span>
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 100%;"><img src="images/postopus3.jpeg" alt="Postopus"
+									style="width: 80%;"> <br>Slice of Benzene electron density</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h3>ML on micromagnetic configuration</h3>
+					<img src="images/logo/python.png" alt="Python Logo"
+						style="width: 7%; position: absolute; top: 0; right: 0;">
+					<table style="width: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 60%;"><img src="images/mm_cfg_1.png" alt="MM CFG"
+									style="width: 100%;"><br> The energy density difference between identified
+								equilibrium states and the corresponding ground state.<br>[Beg, M., Carey, R., Wang, W.
+								et al. Sci Rep 5, 17137 (2015).]</td>
+							<td style="width: 40%;"><img src="images/mm_cfg_2.png" alt="Postopus" style="width: 80%;">
+								Example magnetic configurations <br><span style="font-size:small;">PC: Swapneel</span>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+
+			<!-- My interest in functional metal oxides -->
+			<section>
+
+				<section>
+					<h3>My interest in functional metal oxides</h3>
+					<table style="width: 100%; font-size: 22px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/crossbar-drawn.png" alt="Memristive crossbar"
+									style="width: 100%;">HZO Memristive crossbar array for vector multiplication
+								applications</td>
+							<td style="width: 50%;"><img src="images/rnn.svg" alt="PCB fabricated"
+									style="width: 100%;"><br>A physical reservoir computing scheme uses a magnetic
+								reservoir or ferroelectric reservoir (here made from domain walls) (center) for
+								clustering.<br>[inspired from Karin Everschor-Sitte et. al. arXiv (2023)]</td>
+						</tr>
+					</table>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h2>Thank you!</h2>
+				</section>
+			</section>
 
 
 
 
 
 			</section>
-			</div>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/math/math.js"></script>
-		<!-- reveal.js-notes-pointer Public -->
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				slideNumber: 'c',
-				// // mouse-pointer plugin caiofcm/plugin-revealjs-mouse-pointer
-				// dependencies: [
-				// 	{ src: 'plugin/mouse-pointer.js', async: true },
-				// ],
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<!-- reveal.js-notes-pointer Public -->
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: 'c',
+			// // mouse-pointer plugin caiofcm/plugin-revealjs-mouse-pointer
+			// dependencies: [
+			// 	{ src: 'plugin/mouse-pointer.js', async: true },
+			// ],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
 
-			});
-		</script>
-	</body>
+		});
+	</script>
+</body>
+
 </html>
